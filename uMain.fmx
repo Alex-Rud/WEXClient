@@ -1,0 +1,200 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Wex'
+  ClientHeight = 290
+  ClientWidth = 533
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object b1: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 1
+    Text = #1047#1072#1087#1088#1086#1089
+    OnClick = b1Click
+  end
+  object cbTickers: TComboBox
+    Items.Strings = (
+      'btc_usd'
+      'ppc_usd'
+      'nmc_usd'
+      'nvc_usd'
+      'eth_usd'
+      'ltc_usd')
+    ItemIndex = 0
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 2
+  end
+  object mmoRawText: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.Y = 181.000000000000000000
+    Size.Width = 533.000000000000000000
+    Size.Height = 109.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 529.000000000000000000
+    Viewport.Height = 105.000000000000000000
+  end
+  object b2: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'LastError'
+    OnClick = b2Click
+  end
+  object gb1: TGroupBox
+    Align = Bottom
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.Y = 61.000000000000000000
+    Size.Width = 533.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    Text = #1048#1085#1092#1086
+    TextSettings.Font.Size = 15.000000000000000000
+    TabOrder = 12
+    object lbl1: TLabel
+      StyledSettings = [Family]
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claCrimson
+      Text = #1052#1080#1085'/'#1084#1072#1082#1089
+      TabOrder = 1
+    end
+    object edtLow: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      TextSettings.Font.Size = 15.000000000000000000
+      Position.X = 199.000000000000000000
+      Position.Y = 24.000000000000000000
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object edtAvg: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      TextSettings.Font.Size = 15.000000000000000000
+      Position.X = 307.000000000000000000
+      Position.Y = 24.000000000000000000
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object edtHigh: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      TextSettings.Font.Size = 15.000000000000000000
+      Position.X = 416.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 101.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object lbl2: TLabel
+      StyledSettings = [Family]
+      Position.X = 16.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claBlueviolet
+      Text = #1054#1073#1098#1077#1084'('#1090#1077#1082#1091#1097#1080#1081'/'#1074#1089#1077#1075#1086')'
+      TabOrder = 5
+    end
+    object edtVolume: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      TextSettings.Font.Size = 15.000000000000000000
+      Position.X = 200.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 207.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object edtLast: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claChocolate
+      Position.X = 416.000000000000000000
+      Position.Y = 76.000000000000000000
+      StyledSettings = [Family]
+    end
+    object lbl3: TLabel
+      StyledSettings = [Family]
+      Position.X = 16.000000000000000000
+      Position.Y = 75.000000000000000000
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claMediumblue
+      Text = #1062#1077#1085#1072
+      TabOrder = 8
+    end
+    object edtBuy: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 9
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claDarkgreen
+      Position.X = 200.000000000000000000
+      Position.Y = 77.000000000000000000
+      StyledSettings = [Family]
+    end
+    object edtSell: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claDarkred
+      Position.X = 306.000000000000000000
+      Position.Y = 76.000000000000000000
+      StyledSettings = [Family]
+    end
+  end
+  object tmdtUpdate: TTimeEdit
+    Time = 0.538194444444444400
+    TimeFormatKind = Long
+    Anchors = [akTop, akRight]
+    KeyboardType = Default
+    Position.X = 406.000000000000000000
+    Position.Y = 7.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 25.000000000000000000
+    TabOrder = 14
+  end
+  object idhttp1: TIdHTTP
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 160
+    Top = 56
+  end
+end
